@@ -215,7 +215,7 @@ const MediumEditorComponent = Component.extend({
     let filteredOptions = optionsList.map((option) => (
       isPresent(get(this, option)) ? option : null
     ));
-    filteredOptions = (new A(filteredOptions)).compact();
+    filteredOptions = (A(filteredOptions)).compact();
 
     let collectedOptions = getProperties(this, filteredOptions);
     let optionsHash = get(this, 'options');
